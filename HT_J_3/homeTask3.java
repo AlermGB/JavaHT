@@ -11,11 +11,14 @@ public class homeTask3 {
     public static void main(String[] args) {
         ArrayList<Integer> arrListInt = new ArrayList<Integer>(List. of(2, 3, 17, 89, 9, 10));
         oddEraser(arrListInt);
-        System.out.println(oddEraser(arrListInt));      
+        System.out.println();   
+        System.out.println(oddEraser(arrListInt));   
+        System.out.println();   
 
         ArrayList<String> arrListString = new ArrayList<>(List.of("string", "s", "5", "10", "-12", "my_value"));
         System.out.println(ifStringIsInteger(arrListString));
-        
+        System.out.println();
+
     }
 // Дан список ArrayList<Integer> целых чисел. Удалить из него нечетные числа.
     private static ArrayList<Integer> oddEraser(ArrayList<Integer> list) {
@@ -48,8 +51,10 @@ public class homeTask3 {
         try {
             Integer.parseInt(anyString);
             return true;
-        } catch (NumberFormatException e) {
+        }
+        catch (NumberFormatException e) {
             return false;
         }
     }
 }
+
