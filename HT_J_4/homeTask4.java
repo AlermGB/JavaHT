@@ -52,11 +52,12 @@ public class homeTask4 {
                     }
                     else{
                         System.out.println(mainArray.get(number));
+                        System.out.println();
                     }
                 }
             }
             else{
-                System.out.println("Uncorrect input!!! Try again! ");
+                System.out.println("Uncorrect input!!! Try again!");
             }
             command = scan.nextLine();
         }
