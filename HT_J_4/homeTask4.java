@@ -30,11 +30,11 @@ public class homeTask4 {
 
     public static void main(String[] args) {
         ArrayList <String> mainArray = new ArrayList<>();
-        
         Integer number = 0;
         Scanner scan  = new Scanner(System.in);        
         System.out.println("Start input:");
         String command = scan.nextLine();
+
         while (!command.equals("exit")) {
             System.out.println();
             String [] commandArr = command.split("~");
@@ -63,9 +63,9 @@ public class homeTask4 {
         }
         scan.close();
     }
+
     private static Boolean isCorrectInt(String inputStr){
-        
-        try {
+                try {
             if(Integer.parseInt(inputStr) >= 0 )
                 return true;
             else{
@@ -76,5 +76,4 @@ public class homeTask4 {
             return false;
         }
     }
-
 }
