@@ -38,7 +38,7 @@ public class homeTask4 {
         while (!command.equals("exit")) {
             System.out.println();
             String [] commandArr = command.split("~");
-            if((commandArr.length == 2) && (commandArr[0] != "") && (commandArr[0] != null) && (isCorrectInt(commandArr[1]))){
+            if((commandArr.length == 2) && (!commandArr[0].equals("")) && (commandArr[0] != null) && (isCorrectInt(commandArr[1]))){
                 number = Integer.parseInt(commandArr[1]);
                 if(number >= mainArray.size()){
                     for (int i = mainArray.size(); i < number; i++) {
