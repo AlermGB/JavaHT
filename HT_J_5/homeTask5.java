@@ -27,7 +27,7 @@ public class homeTask5 {
     static void collectStats(String text) {
         String[] arrayOfWords = text.split(" ");
         Map<Integer, List<String>> stats = new HashMap<Integer, List<String>>();
-        int maxLengthOfWords = 0;
+        Integer maxLengthOfWords = 0;
         for (int i = 0; i < arrayOfWords.length; i++) {
             if (arrayOfWords[i].length() > maxLengthOfWords) {
                 maxLengthOfWords = arrayOfWords[i].length();
@@ -42,7 +42,7 @@ public class homeTask5 {
                 stats.put(arrayOfWords[i].length(), tempList);
             }
         }
-        for (int i = 0; i < arrayOfWords.length; i++) {
+        for (int i = 0; i <= maxLengthOfWords; i++) {
             if (stats.containsKey(i)) {
                 System.out.println(String.join(" ", stats.get(i)));
             }
