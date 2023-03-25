@@ -1,9 +1,8 @@
 package HT_J_6;
-import java.io.IOException;
 import java.util.ArrayList;
 
 public class homeTask6 {
-    public static void main(String[] args) throws IOException, ClassNotFoundException{
+    public static void main(String[] args) {
         Gender male = Gender.MALE;
         Gender female = Gender.FEMALE;
         ArrayList<Person> persons = new ArrayList<Person>();
